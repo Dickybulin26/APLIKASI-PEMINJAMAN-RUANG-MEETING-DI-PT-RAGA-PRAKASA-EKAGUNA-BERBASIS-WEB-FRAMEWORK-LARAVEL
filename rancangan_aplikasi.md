@@ -2,61 +2,58 @@ APLIKASI PEMINJAMAN RUANG MEETING DI PT RAGA PRAKASA EKAGUNA BERBASIS WEB FRAMEW
 
 feature :
 
-- menu login & registrasi
+-   menu login & registrasi
 
-  - dashboard (admin)
+    -   dashboard (admin)
 
-    - sidebar
+        -   sidebar
 
-      - ruangan
-        -> CRUD ruangan
-      - user
-        -> CRUD user
+            -   ruangan
+                -> CRUD ruangan
+            -   user
+                -> CRUD user
 
-      - booking list // merespons booking dari user, apakah ruangan tersedia atau tidak
-        -> CRUD booking
+            -   booking list // merespons booking dari user, apakah ruangan tersedia atau tidak
+                -> CRUD booking
 
-      - ganti password
+            -   ganti password
 
-    - informasi statistic jumlah sewa ruangan
-    - informasi statistic jumlah user
-    - informasi statistic jumlah ruangan yang tersedia
+        -   informasi statistic jumlah sewa ruangan
+        -   informasi statistic jumlah user
+        -   informasi statistic jumlah ruangan yang tersedia
 
-  - dashboard (operator)
+    -   dashboard (operator)
 
-    - sidebar
+        -   sidebar
 
-      - booking list // merespons booking dari user, apakah ruangan tersedia atau tidak
-        -> CRUD booking 
-      - ruangan
-        -> read ruangan
-      - user
-        -> read user
+            -   booking list // merespons booking dari user, apakah ruangan tersedia atau tidak
+                -> CRUD booking
+            -   ruangan
+                -> read ruangan
+            -   user
+                -> read user
 
-      - PDF report
+            -   PDF report
 
-    - informasi statistic jumlah sewa ruangan
-      - informasi statistic jumlah user
-      - informasi statistic jumlah ruangan yang tersedia
+        -   informasi statistic jumlah sewa ruangan
+        -   informasi statistic jumlah user
+        -   informasi statistic jumlah ruangan yang tersedia
 
-  - dashboard (user)
+    -   dashboard (user)
 
-    - sidebar
+        -   sidebar
 
-      - booking
-        -> CRUD booking
-            --> nama ruangan
-            --> tanggal booking
-            --> waktu mulai
-            --> waktu selesai
-            --> alasan booking
+            -   booking
+                -> CRUD booking
+                --> nama ruangan
+                --> tanggal booking
+                --> waktu mulai
+                --> waktu selesai
+                --> alasan booking
 
-      - list ruangan
+            -   list ruangan
 
-      - ganti password
+            -   ganti password
 
-    - informasi statistic jumlah sewa ruangan
-    - informasi statistic jumlah ruangan yang tersedia
-
-
-
+        -   informasi statistic jumlah sewa ruangan
+        -   informasi statistic jumlah ruangan yang tersedia

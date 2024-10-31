@@ -22,6 +22,10 @@ Route::get('/index', function() {
     return view("layouts.index");
 });
 
-Route::get('/dashboard', function () {
+Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
+});
+
+Route::get('/operator/dashboard', function () {
+    return view('operator.dashboard');
 });

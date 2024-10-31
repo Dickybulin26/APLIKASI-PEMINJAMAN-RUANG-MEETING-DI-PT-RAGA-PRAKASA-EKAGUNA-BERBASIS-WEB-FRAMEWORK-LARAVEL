@@ -58,7 +58,7 @@
                                         <img src="{{ asset('assets/compiled/jpg/1.jpg') }}" alt="Face 1">
                                     </div>
                                     <div class="ms-3 name">
-                                        <h5 class="font-bold">Admin</h5>
+                                        <h5 class="font-bold">Operator</h5>
                                         <h6 class="text-muted mb-0">superuser</h6>
                                     </div>
                                 </div>
