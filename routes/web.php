@@ -45,3 +45,40 @@ Route::get('/admin/booking', function () {
 Route::get('/operator/dashboard', function () {
     return view('operator.dashboard');
 });
+
+//* halaman room operator
+Route::get('/operator/room', function () {
+    return view('operator.room');
+})->name('operator.room');
+
+//* halaman user operator
+Route::get('/operator/user', function () {
+    return view('operator.user');
+})->name('operator.user');
+
+//* halaman booking operator
+Route::get('/operator/booking', function () {
+    return view('operator.booking');
+})->name('operator.booking');
+
+//? user 
+
+//* halaman dashboard user
+Route::get('/user/dashboard', function () {
+    return view('user.dashboard');
+});
+
+//* halaman room user
+Route::get('/user/room', function () {
+    return view('user.room');
+})->name('user.room');
+
+//* halaman user user
+Route::get('/user/user', function () {
+    return view('user.user');
+})->name('user.user');
+
+//* halaman booking user
+Route::get('/user/booking', function () {
+    return view('user.booking');
+})->name('user.booking');
