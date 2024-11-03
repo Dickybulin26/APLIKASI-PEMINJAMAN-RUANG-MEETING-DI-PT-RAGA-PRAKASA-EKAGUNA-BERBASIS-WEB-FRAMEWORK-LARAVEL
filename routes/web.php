@@ -12,6 +12,13 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/login', function () {
+    return view('login.login');
+})->name('login.login');
+
+Route::get('/login/register', function () {
+    return view('login.register');
+})->name('login.register');
 
 Route::get('/', function () {
     return view('welcome');
@@ -97,3 +104,7 @@ Route::get('/user/booking', function () {
 Route::get('/user/resetPassword', function () {
     return view('user.resetPassword');
 })->name('user.resetPassword');
+
+Route::get('/user/tambahbooking', function () {
+    return view('user.tambahbooking');
+})->name('user.tambahbooking');

@@ -21,6 +21,11 @@
             height: 600px;
             width: 100%;
         }
+
+        form .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
@@ -45,7 +50,14 @@
                                     <label for="confirmPassword" class="form-label">Konfirmasi Password Baru</label>
                                     <input type="password" class="form-control" id="confirmPassword">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                <div class="buttons">
+                                    <div>
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </div>
+                                    <div>
+                                        <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary" type='button'>Kembali</a>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
