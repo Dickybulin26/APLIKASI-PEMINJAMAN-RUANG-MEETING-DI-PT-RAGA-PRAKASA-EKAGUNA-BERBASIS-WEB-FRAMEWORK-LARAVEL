@@ -2,6 +2,8 @@ APLIKASI PEMINJAMAN RUANG MEETING DI PT RAGA PRAKASA EKAGUNA BERBASIS WEB FRAMEW
 
 feature :
 
+- Homepage // menampilkan informasi booking saat ini
+
 -   menu login & registrasi
 
     -   dashboard (admin)
@@ -57,3 +59,11 @@ feature :
 
         -   informasi statistic jumlah sewa ruangan
         -   informasi statistic jumlah ruangan yang tersedia
+
+
+# Database
+
+-   ruangan
+-   user
+-   booking
+-   
