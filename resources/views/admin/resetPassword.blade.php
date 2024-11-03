@@ -23,7 +23,7 @@
         }
 
         form .buttons {
-            display: flex; 
+            display: flex;
             justify-content: space-between;
         }
     </style>
@@ -51,12 +51,12 @@
                                     <input type="password" class="form-control" id="confirmPassword">
                                 </div>
                                 <div class="buttons">
-                                <div>
-                                <button type="submit" class="btn btn-primary">Simpan</button>
-                                </div>
-                                <div>
-                                <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary" type='button'>Kembali</a>
-                                </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    </div>
+                                    <div>
+                                        <a href="{{ route('admin.dashboard') }}" class="btn btn-secondary" type='button'>Kembali</a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
