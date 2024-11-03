@@ -1,5 +1,11 @@
 @extends('layouts.main')
 
+<style>
+    #main table .badge {
+        font-size: 16px !important;
+    }
+</style>
+
 <div id="main" class="main">
     <header class="mb-3">
         <a href="#" class="burger-btn d-block d-xl-none">
@@ -7,8 +13,14 @@
         </a>
     </header>
 
-    <div class="page-heading">
-        <h3>Bookings</h3>
+    <div class="page-heading d-flex justify-content-between">
+        <div class="left-content">
+            <h3>Bookings</h3>
+            <p class="text-subtitle text-muted">Get your daily bookings here.</p>
+        </div>
+        <div class="right-content">
+            <a href="#" type="button" class="btn btn-primary">Add Booking <i class="bi bi-plus-lg"></i></a>
+        </div>
     </div>
     <section class="page-content">
         <div class="row">
@@ -29,7 +41,7 @@
                                                 <th>Times</th>
                                                 <th>Room</th>
                                                 <th>Purpose</th>
-                                                <th class="text-center">Action</th>
+                                                <th class="text-center">Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -49,9 +61,8 @@
                                                         managemen keuangan perusahaan</p>
                                                 </td>
                                                 <td>
-                                                    <div class="action-button d-flex gap-4">
-                                                        <a href="#" class="btn btn-success">Accept</a>
-                                                        <a href="#" class="btn btn-danger">Decline</a>
+                                                    <div class="status-badge">
+                                                        <span class="badge bg-warning">Ongoing</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -71,9 +82,8 @@
                                                         managemen keuangan perusahaan</p>
                                                 </td>
                                                 <td>
-                                                    <div class="action-button d-flex gap-4">
-                                                        <a href="#" class="btn btn-success">Accept</a>
-                                                        <a href="#" class="btn btn-danger">Decline</a>
+                                                    <div class="status-badge">
+                                                        <span class="badge bg-success">Done</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -93,9 +103,8 @@
                                                         managemen keuangan perusahaan</p>
                                                 </td>
                                                 <td>
-                                                    <div class="action-button d-flex gap-4">
-                                                        <a href="#" class="btn btn-success">Accept</a>
-                                                        <a href="#" class="btn btn-danger">Decline</a>
+                                                    <div class="status-badge">
+                                                        <span class="badge bg-danger">Denied</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -115,9 +124,8 @@
                                                         managemen keuangan perusahaan</p>
                                                 </td>
                                                 <td>
-                                                    <div class="action-button d-flex gap-4">
-                                                        <a href="#" class="btn btn-success">Accept</a>
-                                                        <a href="#" class="btn btn-danger">Decline</a>
+                                                    <div class="status-badge">
+                                                        <span class="badge bg-success">Done</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -137,9 +145,8 @@
                                                         managemen keuangan perusahaan</p>
                                                 </td>
                                                 <td>
-                                                    <div class="action-button d-flex gap-4">
-                                                        <a href="#" class="btn btn-success">Accept</a>
-                                                        <a href="#" class="btn btn-danger">Decline</a>
+                                                    <div class="status-badge">
+                                                        <span class="badge bg-success">Done</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -159,9 +166,8 @@
                                                         managemen keuangan perusahaan</p>
                                                 </td>
                                                 <td>
-                                                    <div class="action-button d-flex gap-4">
-                                                        <a href="#" class="btn btn-success">Accept</a>
-                                                        <a href="#" class="btn btn-danger">Decline</a>
+                                                    <div class="status-badge">
+                                                        <span class="badge bg-success">Done</span>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -181,13 +187,12 @@
                                                         managemen keuangan perusahaan</p>
                                                 </td>
                                                 <td>
-                                                    <div class="action-button d-flex gap-4">
-                                                        <a href="#" class="btn btn-success">Accept</a>
-                                                        <a href="#" class="btn btn-danger">Decline</a>
+                                                    <div class="status-badge">
+                                                        <span class="badge bg-success">Done</span>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>

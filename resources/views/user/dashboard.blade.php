@@ -4,9 +4,6 @@
 <style>
     #main table .badge {
         font-size: 16px !important;
-        /* padding: 5px 10px; */
-        /* border-radius: 10px; */
-        /* background-color: #E9ECEF; */
     }
 </style>
 
@@ -24,7 +21,7 @@
         <section class="row">
             <div class="col-12 col-lg-12">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card">
                             <div class="card-header card-number">
                                 <h6 class="font-bold">Rooms</h6>
@@ -36,19 +33,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="card">
-                            <div class="card-header card-number">
-                                <h6 class="font-bold">Users</h6>
-                            </div>
-                            <div class="card-body px-4 py-4-5">
-                                <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                                    <h6 class="font-extrabold mb-0 text-count">180.000</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card">
                             <div class="card-header card-number">
                                 <h6 class="font-bold">Total Bookings</h6>
@@ -60,40 +45,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card">
+                            <div class="card-header card-number">
+                                <h6 class="font-bold">Profile</h6>
+                            </div>
                             <div class="card-body py-4 px-4">
                                 <div class="d-flex align-items-center">
                                     <div class="avatar avatar-xl">
                                         <img src="{{ asset('assets/compiled/jpg/1.jpg') }}" alt="Face 1">
                                     </div>
                                     <div class="ms-3 name">
-                                        <h5 class="font-bold">Operator</h5>
-                                        <h6 class="text-muted mb-0">superuser</h6>
+                                        <h5 class="font-bold">Udin Dalam</h5>
+                                        <h6 class="text-muted mb-0">user</h6>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-9">
-                        <div class="card">
-                            <div class="carfd-header">
-                                <h4 class="title-card-barchart">Statistik Booking Setiap Bulan</h4>
-                            </div>
-                            <div class="card-body">
-                                <div id="chart-profile-visit"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-3">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Statistik Ruangan</h4>
-                            </div>
-                            <div class="card-body">
-                                <div id="chart-visitors-profile"></div>
                             </div>
                         </div>
                     </div>
