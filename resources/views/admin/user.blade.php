@@ -1,4 +1,4 @@
-@extends('layouts.main')
+`@extends('layouts.main')
 
 <div id="main" class="main">
     <header class="mb-3">
