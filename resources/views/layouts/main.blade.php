@@ -54,10 +54,12 @@
                 <div class="sidebar-header position-relative">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <a href="#"><img src="{{ asset('assets/compiled/svg/logo.svg') }}" alt="Logo" srcset=""></a>
+                            <a href="#"><img src="{{ asset('assets/compiled/svg/logo.svg') }}" alt="Logo"
+                                    srcset=""></a>
                         </div>
                         <div class="sidebar-toggler  x">
-                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i
+                                    class="bi bi-x bi-middle"></i></a>
                         </div>
                     </div>
                 </div>
@@ -103,8 +105,8 @@
 
                         <li class="sidebar-title">GANTI PASSWORD</li>
 
-                        <li class="sidebar-item">   
-                            <a href="{{ route('gantipassword') }}" class='sidebar-link'>
+                        <li class="sidebar-item">
+                            <a href="{{ route('admin.resetPassword') }}" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
                                 <span>Ganti Password</span>
                             </a>
@@ -120,7 +122,7 @@
             @yield('content')
         </div>
 
-        
+
     </div>
     <script src="{{ asset('assets/static/js/components/dark.js') }}"></script>
     <script src="{{ asset('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
@@ -132,7 +134,6 @@
 </body>
 
 <script>
-
     // sidebar menu active if clicked
     document.querySelectorAll('.sidebar-link').forEach(link => {
         link.addEventListener('click', function() {
@@ -142,7 +143,6 @@
             this.classList.add('active');
         });
     });
-
 </script>
 
 </html>

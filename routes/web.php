@@ -39,6 +39,11 @@ Route::get('/admin/booking', function () {
     return view('admin.booking');
 })->name('admin.booking');
 
+//* halaman reset password admin
+Route::get('/admin/resetPassword', function () {
+    return view('admin.resetPassword');
+})->name('admin.resetPassword');
+
 //? operator
 
 //* halaman dashboard operator
@@ -61,7 +66,12 @@ Route::get('/operator/booking', function () {
     return view('operator.booking');
 })->name('operator.booking');
 
-//? user 
+//* halaman reset password operator
+Route::get('/operator/resetPassword', function () {
+    return view('operator.resetPassword');
+})->name('operator.resetPassword');
+
+//? user
 
 //* halaman dashboard user
 Route::get('/user/dashboard', function () {
@@ -82,3 +92,8 @@ Route::get('/user/user', function () {
 Route::get('/user/booking', function () {
     return view('user.booking');
 })->name('user.booking');
+
+//* halaman reset password user
+Route::get('/user/resetPassword', function () {
+    return view('user.resetPassword');
+})->name('user.resetPassword');
