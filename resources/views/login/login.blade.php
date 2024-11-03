@@ -13,6 +13,11 @@
             padding: 0px;
         }
 
+        a {
+      color: blue;
+      text-decoration: none;
+        }
+
         .center {
             display: flex;
             justify-content: center;
@@ -51,6 +56,7 @@
 </select>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+        <p>Belum punya akun? <a href="http://localhost:8000/login/register">Daftar di sini</a></p>
   </div>
 </div>
 </div>
