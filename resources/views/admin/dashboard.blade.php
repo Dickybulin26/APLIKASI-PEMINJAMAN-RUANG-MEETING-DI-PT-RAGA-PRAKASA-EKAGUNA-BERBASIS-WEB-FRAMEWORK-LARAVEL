@@ -1,5 +1,15 @@
 @extends('layouts.main')
 
+
+<style>
+    #main table .badge {
+        font-size: 16px !important;
+        /* padding: 5px 10px; */
+        /* border-radius: 10px; */
+        /* background-color: #E9ECEF; */
+    }
+</style>
+
 <div id="main" class="main">
     <header class="mb-3">
         <a href="#" class="burger-btn d-block d-xl-none">
@@ -102,105 +112,95 @@
                                                 <th>Name</th>
                                                 <th>Times</th>
                                                 <th>Room</th>
-                                                <th>Purpose</th>
+                                                <th class="text-center">Purpose</th>
+                                                <th>Status</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td class="col-3">
+                                                <td class="col-md-2">
                                                     <div class="d-flex align-items-center">
                                                         <div class="avatar avatar-md">
                                                             <img src="{{ asset('assets/compiled/jpg/5.jpg') }}">
                                                         </div>
-                                                        <p class="font-bold ms-3 mb-0">Siti</p>
+                                                        <p class="font-bold ms-3 mb-0">Riki Halim</p>
                                                     </div>
                                                 </td>
-                                                <td class="px-0">7.00 AM - 7.30 AM</td>
-                                                <td>Ruang 1</td>
+                                                <td class="px-0 col-md-2">7.00 AM - 7.30 AM</td>
+                                                <td class="col-md-2">Ruang 1</td>
                                                 <td class="col-auto">
                                                     <p class=" mb-0">Meeting di ruang 1 untuk membahas
-                                                        managemet keuangan perusahaan</p>
+                                                        managemen keuangan perusahaan</p>
                                                 </td>
+                                                <td class="col-md-1"><span class="badge bg-warning">Ongoing</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="col-3">
+                                                <td class="col-md-2">
                                                     <div class="d-flex align-items-center">
                                                         <div class="avatar avatar-md">
                                                             <img src="{{ asset('assets/compiled/jpg/5.jpg') }}">
                                                         </div>
-                                                        <p class="font-bold ms-3 mb-0">Udin</p>
+                                                        <p class="font-bold ms-3 mb-0">Riki Halim</p>
                                                     </div>
                                                 </td>
-                                                <td class="px-0">8.00 AM - 12.30 AM</td>
-                                                <td>Ruang 2</td>
+                                                <td class="px-0 col-md-2">7.00 AM - 7.30 AM</td>
+                                                <td class="col-md-2">Ruang 1</td>
                                                 <td class="col-auto">
-                                                    <p class=" mb-0">Meeting di ruang 2 untuk unit testing
-                                                        preproduction</p>
+                                                    <p class=" mb-0">Meeting di ruang 1 untuk membahas
+                                                        managemen keuangan perusahaan</p>
                                                 </td>
+                                                <td class="col-md-1"><span class="badge bg-success">Done</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="col-3">
+                                                <td class="col-md-2">
                                                     <div class="d-flex align-items-center">
                                                         <div class="avatar avatar-md">
                                                             <img src="{{ asset('assets/compiled/jpg/5.jpg') }}">
                                                         </div>
-                                                        <p class="font-bold ms-3 mb-0">Adam</p>
+                                                        <p class="font-bold ms-3 mb-0">Riki Halim</p>
                                                     </div>
                                                 </td>
-                                                <td class="px-0">8.00 AM - 12.30 AM</td>
-                                                <td>Ruang 3</td>
+                                                <td class="px-0 col-md-2">7.00 AM - 7.30 AM</td>
+                                                <td class="col-md-2">Ruang 1</td>
                                                 <td class="col-auto">
-                                                    <p class=" mb-0">Meeting di ruang 3 untuk unit testing
-                                                        preproduction</p>
+                                                    <p class=" mb-0">Meeting di ruang 1 untuk membahas
+                                                        managemen keuangan perusahaan</p>
                                                 </td>
+                                                <td class="col-md-1"><span class="badge bg-danger">Decline</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="col-3">
+                                                <td class="col-md-2">
                                                     <div class="d-flex align-items-center">
                                                         <div class="avatar avatar-md">
                                                             <img src="{{ asset('assets/compiled/jpg/5.jpg') }}">
                                                         </div>
-                                                        <p class="font-bold ms-3 mb-0">Udin</p>
+                                                        <p class="font-bold ms-3 mb-0">Riki Halim</p>
                                                     </div>
                                                 </td>
-                                                <td class="px-0">8.00 AM - 12.30 AM</td>
-                                                <td>Ruang 2</td>
+                                                <td class="px-0 col-md-2">7.00 AM - 7.30 AM</td>
+                                                <td class="col-md-2">Ruang 1</td>
                                                 <td class="col-auto">
-                                                    <p class=" mb-0">Meeting di ruang 2 untuk unit testing
-                                                        preproduction</p>
+                                                    <p class=" mb-0">Meeting di ruang 1 untuk membahas
+                                                        managemen keuangan perusahaan</p>
                                                 </td>
+                                                <td class="col-md-1"><span class="badge bg-warning">Ongoing</span></td>
                                             </tr>
                                             <tr>
-                                                <td class="col-3">
+                                                <td class="col-md-2">
                                                     <div class="d-flex align-items-center">
                                                         <div class="avatar avatar-md">
                                                             <img src="{{ asset('assets/compiled/jpg/5.jpg') }}">
                                                         </div>
-                                                        <p class="font-bold ms-3 mb-0">Udin</p>
+                                                        <p class="font-bold ms-3 mb-0">Riki Halim</p>
                                                     </div>
                                                 </td>
-                                                <td class="px-0">8.00 AM - 12.30 AM</td>
-                                                <td>Ruang 2</td>
+                                                <td class="px-0 col-md-2">7.00 AM - 7.30 AM</td>
+                                                <td class="col-md-2">Ruang 1</td>
                                                 <td class="col-auto">
-                                                    <p class=" mb-0">Meeting di ruang 2 untuk unit testing
-                                                        preproduction</p>
+                                                    <p class=" mb-0">Meeting di ruang 1 untuk membahas
+                                                        managemen keuangan perusahaan</p>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="col-3">
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="avatar avatar-md">
-                                                            <img src="{{ asset('assets/compiled/jpg/5.jpg') }}">
-                                                        </div>
-                                                        <p class="font-bold ms-3 mb-0">Udin</p>
-                                                    </div>
-                                                </td>
-                                                <td class="px-0">8.00 AM - 12.30 AM</td>
-                                                <td>Ruang 2</td>
-                                                <td class="col-auto">
-                                                    <p class=" mb-0">Meeting di ruang 2 untuk unit testing
-                                                        preproduction</p>
-                                                </td>
+                                                <td class="col-md-1"><span class="badge bg-success">Done</span></td>
                                             </tr>
                                         </tbody>
                                     </table>

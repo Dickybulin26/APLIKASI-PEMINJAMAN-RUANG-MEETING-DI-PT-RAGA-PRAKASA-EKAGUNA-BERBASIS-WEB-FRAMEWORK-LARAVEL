@@ -17,15 +17,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//?admin
 
-Route::get('/index', function() {
-    return view("layouts.index");
-});
-
+//* halaman dashboard admin
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
-});
+})->name('admin.dashboard');
 
+//* halaman room admin
+Route::get('/admin/room', function () {
+    return view('admin.room');
+})->name('admin.room');
+
+//* halaman user admin
+Route::get('/admin/user', function () {
+    return view('admin.user');
+})->name('admin.user');
+
+//* halaman booking admin
+Route::get('/admin/booking', function () {
+    return view('admin.booking');
+})->name('admin.booking');
+
+//? operator
+
+//* halaman dashboard operator
 Route::get('/operator/dashboard', function () {
     return view('operator.dashboard');
 });

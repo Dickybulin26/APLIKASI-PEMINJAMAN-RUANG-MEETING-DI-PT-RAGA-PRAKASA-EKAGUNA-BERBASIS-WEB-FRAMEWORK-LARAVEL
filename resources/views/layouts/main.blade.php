@@ -66,8 +66,8 @@
                     <ul class="menu">
                         <li class="sidebar-title">DASHBOARD</li>
 
-                        <li class="sidebar-item active ">
-                            <a href="#" class='sidebar-link'>
+                        <li class="sidebar-item">
+                            <a href="{{ route('admin.dashboard') }}" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -76,7 +76,7 @@
                         <li class="sidebar-title">DATA MASTER</li>
 
                         <li class="sidebar-item">
-                            <a href="#" class='sidebar-link'>
+                            <a href="{{ route('admin.room') }}" class='sidebar-link'>
                                 <i class="bi bi-door-open-fill"></i>
                                 <span>Ruangan</span>
                             </a>
@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="sidebar-item">
-                            <a href="#" class='sidebar-link'>
+                            <a href="{{ route('admin.user') }}" class='sidebar-link'>
                                 <i class="bi bi-person-fill"></i>
                                 <span>User</span>
                             </a>
@@ -95,7 +95,7 @@
                         <li class="sidebar-title">BOOKING ROOM</li>
 
                         <li class="sidebar-item">
-                            <a href="#" class='sidebar-link'>
+                            <a href="{{ route('admin.booking') }}" class='sidebar-link'>
                                 <i class="bi bi-list-ul"></i>
                                 <span>Booking List</span>
                             </a>
@@ -130,5 +130,19 @@
     <script src="{{ asset('assets/static/js/pages/dashboard.js') }}"></script>
 
 </body>
+
+<script>
+
+    // sidebar menu active if clicked
+    document.querySelectorAll('.sidebar-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.sidebar-link').forEach(link => {
+                link.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+
+</script>
 
 </html>
