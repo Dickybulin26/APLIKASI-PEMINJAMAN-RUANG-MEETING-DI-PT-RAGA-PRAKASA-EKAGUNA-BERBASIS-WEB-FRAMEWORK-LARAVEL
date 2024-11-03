@@ -101,10 +101,10 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-title">SETTING</li>
+                        <li class="sidebar-title">GANTI PASSWORD</li>
 
-                        <li class="sidebar-item">
-                            <a href="#" class='sidebar-link'>
+                        <li class="sidebar-item">   
+                            <a href="{{ route('gantipassword') }}" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
                                 <span>Ganti Password</span>
                             </a>

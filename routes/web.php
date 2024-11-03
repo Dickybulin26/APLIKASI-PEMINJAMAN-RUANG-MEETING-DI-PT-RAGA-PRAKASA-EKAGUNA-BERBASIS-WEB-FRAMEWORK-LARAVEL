@@ -39,6 +39,10 @@ Route::get('/admin/booking', function () {
     return view('admin.booking');
 })->name('admin.booking');
 
+Route::get('/admin/gantipassword', function () {
+    return view('admin.gantipassword');
+})->name('gantipassword');
+
 //? operator
 
 //* halaman dashboard operator
@@ -46,6 +50,16 @@ Route::get('/operator/dashboard', function () {
     return view('operator.dashboard');
 });
 
+Route::get('/operator/gantipassword', function () {
+    return view('operator.gantipassword');
+})->name('gantipassword');
+
 Route::get('/login', function () {
     return view('login.login');
+});
+
+Route::get('/register', function () {
+
+    return view('login.register');
+
 });
