@@ -35,7 +35,7 @@ feature :
             -   user
                 -> read user
 
-            -   PDF report
+            <!-- -   PDF report -->
 
         -   informasi statistic jumlah sewa ruangan
         -   informasi statistic jumlah user

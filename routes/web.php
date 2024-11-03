@@ -39,10 +39,6 @@ Route::get('/admin/booking', function () {
     return view('admin.booking');
 })->name('admin.booking');
 
-Route::get('/admin/gantipassword', function () {
-    return view('admin.gantipassword');
-})->name('gantipassword');
-
 //? operator
 
 //* halaman dashboard operator
@@ -50,16 +46,39 @@ Route::get('/operator/dashboard', function () {
     return view('operator.dashboard');
 });
 
-Route::get('/operator/gantipassword', function () {
-    return view('operator.gantipassword');
-})->name('gantipassword');
+//* halaman room operator
+Route::get('/operator/room', function () {
+    return view('operator.room');
+})->name('operator.room');
 
-Route::get('/login', function () {
-    return view('login.login');
+//* halaman user operator
+Route::get('/operator/user', function () {
+    return view('operator.user');
+})->name('operator.user');
+
+//* halaman booking operator
+Route::get('/operator/booking', function () {
+    return view('operator.booking');
+})->name('operator.booking');
+
+//? user 
+
+//* halaman dashboard user
+Route::get('/user/dashboard', function () {
+    return view('user.dashboard');
 });
 
-Route::get('/register', function () {
+//* halaman room user
+Route::get('/user/room', function () {
+    return view('user.room');
+})->name('user.room');
 
-    return view('login.register');
+//* halaman user user
+Route::get('/user/user', function () {
+    return view('user.user');
+})->name('user.user');
 
-});
+//* halaman booking user
+Route::get('/user/booking', function () {
+    return view('user.booking');
+})->name('user.booking');
