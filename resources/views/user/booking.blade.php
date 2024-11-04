@@ -19,7 +19,7 @@
             <p class="text-subtitle text-muted">Get your daily bookings here.</p>
         </div>
         <div class="right-content">
-            <a href="#" type="button" class="btn btn-primary">Add Booking <i class="bi bi-plus-lg"></i></a>
+            <a href="{{ route('user.tambahBooking') }}" type="button" class="btn btn-primary">Add Booking <i class="bi bi-plus-lg"></i></a>
         </div>
     </div>
     <section class="page-content">

@@ -92,10 +92,10 @@
                         <option value="A101">A101</option>
                         <option value="B202">B202</option>
                     </select>
-                </div>
+                </div>  
                 <div class="purpose-container">
-                    <label for="purpose">Tujuan Penggunaan Ruangan:</label>
-                    <textarea id="purpose" name="purpose" rows="5" cols="30"
+                    <label for="purpose" class="form-label">Tujuan Penggunaan Ruangan:</label>
+                    <textarea class="form-control" id="purpose" name="purpose" rows="5" cols="30" required
                         placeholder="Jelaskan tujuan penggunaan ruangan..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Pesan</button>

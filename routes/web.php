@@ -17,12 +17,12 @@ Route::get('/login', function () {
     return view('login.login');
 })->name('login.login');
 
-Route::get('/login/register', function () {
+Route::get('/register', function () {
     return view('login.register');
 })->name('login.register');
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 //?admin
@@ -106,6 +106,6 @@ Route::get('/user/resetPassword', function () {
     return view('user.resetPassword');
 })->name('user.resetPassword');
 
-Route::get('/user/tambahbooking', function () {
-    return view('user.tambahbooking');
-})->name('user.tambahbooking');
+Route::get('/user/tambahBooking', function () {
+    return view('user.tambahBooking');
+})->name('user.tambahBooking');
